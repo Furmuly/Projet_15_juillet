@@ -1,4 +1,10 @@
 <?php session_start();
+//if the session doesn't exist or if not connected then take it back to index.php
+if (!isset($_SESSION['user'])) {
+    header('Location:index.php');
+    die();
+}
+
 include("dbconn.php");
 
 ?>
@@ -12,8 +18,8 @@ include("dbconn.php");
     <title> Form d'inscription</title>
 </head>
 
-<body style="background-image: url('../photo/JOBK_Img_HeaderDesktop_Home.jpg')">
-<div class="container">
+<body style="background-image: url('photo/JOBK_Img_HeaderDesktop_Home.jpg')">
+<div class="container mt-5">
     <div class="row">
         <div class="col-md-12 mt-4">
             <?php if (isset($_SESSION['message'])) : ?>
@@ -23,11 +29,35 @@ include("dbconn.php");
             endif; ?>
             <div class="card" style="background-color: #f1e2d8">
                 <div class="card-header">
-                    <h3>Participents list
-                        <a href="index.php" class="btn btn-primary float-end">Back</a>
-                        <a href="register_user.php" class="btn btn-primary float-end"> Add user</a>
-                        <a href="register_mem.php" class="btn btn-primary float-end"> Add member</a>
-                    </h3>
+                    <h1>Participants list </h1>
+                    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                        <div class="container-fluid">
+                            <!-- links-->
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="logout.php" class="nav-link">Log_out</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="register_user.php" class="nav-link"> Add_user</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="register_mem.php" class="nav-link"> Add_member</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="eventmaker.php" class="nav-link">New_event </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="view_event.php" class="nav-link">New </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </nav>
                 </div>
                 <div class="card-body">
                     <table class="table table-bordered table-striped">

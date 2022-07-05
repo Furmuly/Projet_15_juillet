@@ -13,7 +13,7 @@ session_start();
 
     <title> Form d'inscription</title>
 </head>
-<body style="background-image: url('../photo/JOBK_Img_HeaderDesktop_Home.jpg')">
+<body style="background-image: url('photo/JOBK_Img_HeaderDesktop_Home.jpg')">
 
 <div class="container">
     <div class="row">
@@ -26,7 +26,7 @@ session_start();
                 </div>
                 <div class="card-body">
                     <!-- Sending the form to register_query.php to add to database -->
-                    <form action="register_query.php" method="post">
+                    <form action="code.php" method="post">
 
                         <div class="mb-3">
                             <label>
@@ -55,12 +55,18 @@ session_start();
                             <label for="password">
                                 Enter a password (8 characters minimum) :
                                 <input type="password" name="password" class="form-control" minlength="8" required
-                                       placeholder="Enter here"/>
+                                       placeholder="Enter here" autocomplete="off"/>
                         </div>
+
+                        <!-- <div class="mb-3">
+                            <label for="password_retype">
+                                <input type="password" name="password_retype" class="form-control"
+                                       placeholder="Re-tapez le mot de passe" required="required" autocomplete="off">
+                        </div> -->
 
                         <div class="mb-3">
                             <label for="username">
-                                Your Last Name :
+                                Add a username :
                                 <input type="text" class="form-control" name="username" required
                                        placeholder="Enter here"/>
                         </div>

@@ -1,4 +1,5 @@
 <?php
+//Starts the session
 session_start();
 ?>
 <!DOCTYPE html>
@@ -10,7 +11,7 @@ session_start();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body style="background-image: url('../photo/JOBK_Img_HeaderDesktop_Home.jpg')">
+<body style="background-image: url('photo/JOBK_Img_HeaderDesktop_Home.jpg')">
 
 <div class="container mt-3">
     <div class="card" style="background-color: #f1e2d8">
@@ -52,11 +53,15 @@ session_start();
         <div class="form-check mb-3">
             <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
             <label class="form-check-label" for="myCheck">I agree on blabla.</label>
+
             <div class="valid-feedback">Valid.</div>
             <div class="invalid-feedback">Check this checkbox to continue.</div>
         </div>
         <!-- submit button to later redirect to list.php if user was authorised -->
         <button type="submit" name="list_btn" class="btn btn-primary">Submit</button>
+        <!-- takes us to password reset page -->
+        <a href="reset_pass.php" class="btn btn-primary float-end"> Forgot password </a>
+
     </form>
 </div>
 

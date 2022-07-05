@@ -8,7 +8,7 @@
 
     <title> Insert data into database using php pdo</title>
 </head>
-<body style="background-image: url('../photo/JOBK_Img_HeaderDesktop_Home.jpg')">
+<body style="background-image: url('photo/JOBK_Img_HeaderDesktop_Home.jpg')">
 
 <div class="container">
     <div class="row">
@@ -59,9 +59,8 @@
                         <div class="mb-3">
                             <label for="phone">
                                 Your Phone Number :
-                                <input type="tel" name="phone" class="form-control"
-                                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required
-                                       placeholder="000 000 00 00"/>
+                                <input type="tel" name="phone" class="form-control" required="required"
+                                       placeholder="000-000-00-00"/>
                         </div>
 
                         <div class="mb-3">
