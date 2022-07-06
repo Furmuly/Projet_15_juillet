@@ -1,19 +1,8 @@
 <?php
 session_start();
+require "header.php";
 
 ?>
-
-<!doctype html >
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="wide=device-width, initial-scale=1">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <title> Form d'inscription</title>
-</head>
-<body style="background-image: url('photo/JOBK_Img_HeaderDesktop_Home.jpg')">
 
 <div class="container">
     <div class="row">
@@ -80,8 +69,4 @@ session_start();
                 </div>
             </div>
 
-
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
 

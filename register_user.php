@@ -1,14 +1,6 @@
-<!doctype html >
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="wide=device-width, initial-scale=1">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <title> Insert data into database using php pdo</title>
-</head>
-<body style="background-image: url('photo/JOBK_Img_HeaderDesktop_Home.jpg')">
+<?php
+require "header.php";
+?>
 
 <div class="container">
     <div class="row">
@@ -72,6 +64,3 @@
             </div>
 
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>

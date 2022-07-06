@@ -1,17 +1,8 @@
 <?php
 //Starts the session
 session_start();
+require "header.php";
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body style="background-image: url('photo/JOBK_Img_HeaderDesktop_Home.jpg')">
 
 <div class="container mt-3">
     <div class="card" style="background-color: #f1e2d8">
@@ -65,5 +56,3 @@ session_start();
     </form>
 </div>
 
-</body>
-</html>
